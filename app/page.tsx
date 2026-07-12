@@ -1,5 +1,3 @@
-const CONTACT_EMAIL = "ademcwealth@gmail.com";
-
 const features = [
   {
     title: "AI document intake",
@@ -32,12 +30,6 @@ export default function Home() {
           <span className="text-lg font-semibold tracking-tight">
             Furniture OS
           </span>
-          <a
-            href={`mailto:${CONTACT_EMAIL}`}
-            className="rounded-full border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:border-zinc-400 hover:text-zinc-950 dark:border-zinc-800 dark:text-zinc-300 dark:hover:border-zinc-600 dark:hover:text-white"
-          >
-            Get in touch
-          </a>
         </div>
       </header>
 
@@ -56,17 +48,6 @@ export default function Home() {
           to day: document intake, order tracking, purchase orders, and
           reporting across every brand you run.
         </p>
-        <div className="mt-10 flex flex-wrap items-center gap-4">
-          <a
-            href={`mailto:${CONTACT_EMAIL}`}
-            className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
-          >
-            Contact us
-          </a>
-          <span className="text-sm text-zinc-500 dark:text-zinc-500">
-            {CONTACT_EMAIL}
-          </span>
-        </div>
       </section>
 
       {/* Features */}
@@ -94,25 +75,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="mx-auto w-full max-w-5xl px-6 py-20 sm:py-28">
-        <div className="rounded-2xl border border-zinc-200 px-8 py-12 text-center dark:border-zinc-800 sm:px-16">
-          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            Still running your business off printed bills and spreadsheets?
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
-            Tell us about your setup and we&apos;ll walk you through how
-            Furniture OS fits alongside Anzio.
-          </p>
-          <a
-            href={`mailto:${CONTACT_EMAIL}`}
-            className="mt-8 inline-block rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
-          >
-            Email {CONTACT_EMAIL}
-          </a>
         </div>
       </section>
 
