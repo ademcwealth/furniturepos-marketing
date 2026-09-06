@@ -1,0 +1,74 @@
+# Sources the blog-writer routine scans each day. Edit freely; the routine reads this file.
+# Order within a bucket is not priority. The routine picks the story, not the source.
+
+trade_press:
+  - name: Furniture Today
+    url: https://www.furnituretoday.com/
+    notes: US industry paper of record; retail, manufacturing, imports, earnings.
+  - name: Home News Now
+    url: https://homenewsnow.com/
+    notes: Daily home-furnishings news, strong on retailer moves and bankruptcies.
+  - name: Furniture News (UK)
+    url: https://www.furniturenews.net/
+    notes: UK/EU trade; good for a non-US angle.
+  - name: BedTimes Magazine
+    url: https://bedtimesmagazine.com/
+    notes: Mattress/sleep industry, ISPA data.
+  - name: Sleep Retailer
+    url: https://sleepretailer.com/
+    notes: Sleep-shop retail.
+  - name: Casual Living
+    url: https://www.casualliving.com/
+    notes: Outdoor furniture segment.
+  - name: Home Accents Today
+    url: https://www.homeaccentstoday.com/
+  - name: Furniture World
+    url: https://furninfo.com/
+    notes: Retail operations and management focus.
+  - name: Canadian Home Furnishings Alliance / news
+    url: https://www.chfa.ca/
+    notes: Canadian association updates.
+
+retail_and_technology:
+  - name: Retail Dive
+    url: https://www.retaildive.com/
+  - name: Modern Retail
+    url: https://www.modernretail.co/
+  - name: Retail TouchPoints
+    url: https://www.retailtouchpoints.com/
+  - name: Digital Commerce 360
+    url: https://www.digitalcommerce360.com/
+  - name: TechCrunch (retail / AI)
+    url: https://techcrunch.com/
+  - name: The Verge (AI)
+    url: https://www.theverge.com/ai-artificial-intelligence
+
+adjacent_software:
+  # Watched for product announcements, pricing changes, acquisitions and outages.
+  # Facts only; never a negative claim without a citation.
+  - name: STORIS
+    url: https://www.storis.com/
+  - name: Furniture Wizard
+    url: https://www.furniturewizard.com/
+  - name: PROFITsystems (RETAILvantage)
+    url: https://www.profitsystems.com/
+  - name: MicroD / Lightspeed for furniture
+    url: https://www.lightspeedhq.com/
+  - name: Shopify POS
+    url: https://www.shopify.com/pos
+  - name: Podium
+    url: https://www.podium.com/
+  - name: Anzio
+    url: https://www.anziosoftware.com/
+    notes: Legacy furniture POS many stores still run; Furniture OS reads its printouts.
+
+search_queries:
+  - "furniture retail news"
+  - "furniture retailer AI"
+  - "furniture store point of sale 2026"
+  - "home furnishings tariffs"
+  - "furniture retailer bankruptcy OR closing OR expansion"
+  - "mattress retail news"
+  - "furniture e-commerce returns delivery"
+  - "furniture manufacturer price increase"
+  - "retail AI agents inventory"
