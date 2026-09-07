@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,24 +13,33 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "Furniture OS — The operating system for furniture retail";
+const description =
+  "One system that sells, fulfils and reports for your furniture business, with AI that reads your paperwork, sorts your email and drafts your follow-ups. Your team reviews instead of retypes.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://furniturepos.com"),
-  title: "Furniture OS — Operations software for furniture retailers on Anzio",
-  description:
-    "Furniture OS sits downstream of your Anzio ERP and automates the busywork: AI document intake, order tracking with automated customer emails, purchase order generation, and a cross-brand sales dashboard.",
+  title: {
+    default: title,
+    template: "%s — Furniture OS",
+  },
+  description,
   openGraph: {
-    title: "Furniture OS — Operations software for furniture retailers on Anzio",
-    description:
-      "AI-powered document intake, order tracking, purchase orders, and a cross-brand dashboard — built for furniture retailers running on Anzio.",
+    title,
+    description,
     url: "https://furniturepos.com",
     siteName: "Furniture OS",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Furniture OS — Operations software for furniture retailers on Anzio",
-    description:
-      "AI-powered document intake, order tracking, purchase orders, and a cross-brand dashboard — built for furniture retailers running on Anzio.",
+    title,
+    description,
+  },
+  alternates: {
+    types: {
+      "application/rss+xml": "https://furniturepos.com/blog/rss.xml",
+    },
   },
 };
 
@@ -43,7 +53,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
